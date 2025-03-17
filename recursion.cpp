@@ -7,22 +7,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int min(int x, int y) {
-    if (x > y) {
-        return y;
-    }
-    return x;
-}
 
+void print(){
+    cout<< 1 <<endl;
+    print();
+} 
 
-int print(){
-    cout<< "1" << "\n";
-    return 2;
-}
 
 int main(){
+  print();
 
-    int x = min(0, print());
-    cout << x << "\n";
-    return 0; 
 }
+
+//stack overflow -->    when a program exhausts the stack memory allocated for function calls and local variables
